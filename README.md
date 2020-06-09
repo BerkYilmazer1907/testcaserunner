@@ -24,4 +24,6 @@ Eso es un proyecto angular.
 es necesario copiar el archivo cucumber-report.json a la carpeta src en el proyecto angular.
 
 
- 
+ <p align="center">
+  <img src="http://javaunifiedtester.com/force/public/grafik.PNG" width="350" title="Grafik">
+</p>
