@@ -23,10 +23,15 @@ Eso es un proyecto angular.
 
 es necesario copiar el archivo cucumber-report.json a la carpeta src en el proyecto angular.
 
-
+<table>
+  <tr><td>
  <p align="center">
   <img src="http://javaunifiedtester.com/force/public/grafik.PNG" width="350" title="Grafik">
-</p>
+    </p></td></tr>
+  <tr>
+    <td>
 <p>
   <img src="http://javaunifiedtester.com/force/public/grafik2.PNG" width="350" title="Grafik2">
   </p>
+    </td>
+  </tr>
