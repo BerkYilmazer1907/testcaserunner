@@ -27,6 +27,5 @@ es necesario copiar el archivo cucumber-report.json a la carpeta src en el proye
  <p align="center">
   <img src="http://javaunifiedtester.com/force/public/grafik.PNG" width="350" title="Grafik">
 </p>
- <p align="center">
-  <img src="http://javaunifiedtester.com/force/public/grafik2.PNG" width="350" title="Grafik">
-</p>
+
+  <img src="http://javaunifiedtester.com/force/public/grafik2.PNG" width="350" title="Grafik2">
