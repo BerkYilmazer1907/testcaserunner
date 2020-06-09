@@ -1,27 +1,27 @@
 # Testcaserunner
+Öncelikle bloğumu ziyaret etmenizi rica ederim.
+Please visit my blog http://javaunifiedtester.com/force/
+por favor visita mi blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+Bu bir angular projesidir.
+Bu paylaşım cucumber test otomasyon projelerinde senaryoların sonuçlarını
+ kolayca irdelemek için yapılan bir proje ile ilgilidir.
+Cucumber projenizi çalıştırdıktan sonra cucumber-report.json dosyası üretilir.
+Bu dosyada çalıştırdığınız feature senaryoları bulunmaktadır.
 
-## Development server
+Bu projede bu senaryoların sonuçlarını ve senaryoları kolayca takip edebilirsiniz.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Cucumber-report.json dosyasını incelerseniz tarihlerinde olduğunu göreceksiniz, isterseniz bu projenin
+üzerine tarih bilgilerini de getirip gösterecek şekilde geliştirme yapabilirsiniz.
 
-## Code scaffolding
+This is angular project.
+This project is shared to see as a web and graphic result of cucumber scenarios easily.
+In this shared project, you need to copy your cucumber-report.json file to src directory in angular project.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+Eso es un proyecto angular.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+es necesario copiar el archivo cucumber-report.json a la carpeta src en el proyecto angular.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ 
