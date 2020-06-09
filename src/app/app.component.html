@@ -1,0 +1,140 @@
+<div class="container">
+
+  <div class="row">
+    <!-- Card -->
+    <mdb-card>
+      <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+        <!-- Card img -->
+        <mdb-card-img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap"></mdb-card-img>
+        <a>
+          <div class="mask"></div>
+        </a>
+      </div>
+      <!--Card content-->
+      <mdb-card-body>
+        <!--Title-->
+        <mdb-card-title>
+          <h4>Card Title</h4>
+        </mdb-card-title>
+
+        <!--Text-->
+        <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+          content.
+        </mdb-card-text>
+
+        <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+      </mdb-card-body>
+    </mdb-card>
+    <!-- Card -->
+  <section>
+    <h2 class="h1 py-5 font-weight-bold text-center">Cucumber Senaryoları</h2>
+    <div class="col-md-4">
+      <div class="col-lg-4 col-md-12 mb-4">
+      <table mdbTable striped="true">
+        <tbody><tr><td>
+      <div style="display: block">
+      <canvas mdbChart
+              [chartType]="chartType"
+              [datasets]="chartDatasets"
+              [labels]="chartLabels"
+              [colors]="chartColors"
+              [options]="chartOptions"
+              [legend]="true"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)">
+      </canvas>
+      </div>
+        </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </section>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card-header">Test Results</div>
+      <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action waves-effect">Fail
+          <mdb-badge danger="true" pill="true" class="pull-right">{{countfail}}
+            <mdb-icon fas icon="arrow-down" class="ml-1"></mdb-icon>
+          </mdb-badge>
+        </a>
+        <a class="list-group-item list-group-item-action waves-effect">Pass
+          <mdb-badge success="true" pill="true" class="pull-right">{{countpass}}
+            <mdb-icon fas icon="arrow-up" class="ml-1"></mdb-icon>
+          </mdb-badge>
+        </a>
+        <a class="list-group-item list-group-item-action waves-effect">Block
+          <mdb-badge [warning]="true"  pill="true" class="pull-right">{{countblock}}</mdb-badge>
+        </a>
+        <a class="list-group-item list-group-item-action waves-effect">Not executed
+          <mdb-badge color="grey" pill="true" class="pull-right">{{countnotexec}}
+            <mdb-icon fas icon="arrow-right" class="ml-1"></mdb-icon>
+          </mdb-badge>
+        </a>
+      </div>
+    </div>
+      <table mdbTable striped="true">
+      <thead>
+      <tr>
+        <th *ngFor="let head of headElements" scope="col">{{ head }}</th>
+      </tr>
+      </thead>
+      <tbody mdbTableCol *ngFor="let el of contents">
+      <tr>
+        <td scope="row">
+          <button
+            type="button"
+            mdbBtn
+            color="danger"
+            class="master-button"
+            mdbWavesEffect
+            *ngIf="el.collapsed"
+            (click)="el.collapsed = !el.collapsed"
+          >
+            <mdb-icon fas icon="angle-down"></mdb-icon>
+          </button>
+          <button
+            type="button"
+            mdbBtn
+            color="success"
+            class="master-button"
+            mdbWavesEffect
+            *ngIf="!el.collapsed"
+            (click)="el.collapsed = !el.collapsed"
+          >
+            <mdb-icon fas icon="angle-right"></mdb-icon>
+          </button>
+          <span class="ml-1">{{ el.id }}</span>
+        </td>
+        <td>{{ el.name }}</td>
+        <td>{{ el.keyword }}</td>
+      </tr>
+      <tr
+        *ngIf="el.collapsed"
+        style="text-align: center; background-color: rgba(0, 0, 0,  0.015)"
+      >
+        <td colspan="100%" style="border: 0 !important">
+          <table mdbTable>
+            <thead class="black white-text">
+            <tr>
+              <th *ngFor="let head of masterHeadElements" scope="col">{{ head }}</th>
+            </tr>
+            </thead>
+            <tbody *ngFor="let detail of el.steps">
+            <tr>
+              <td>{{ detail.keyword }}</td>
+              <td>{{ detail.name }}</td>
+              <td>{{ detail.result.status }}</td>
+            </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
