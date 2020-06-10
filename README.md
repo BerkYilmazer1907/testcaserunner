@@ -35,3 +35,15 @@ es necesario copiar el archivo cucumber-report.json a la carpeta src en el proye
   </p>
     </td>
   </tr>
+
+Sonuçları görebilmek için yapmanız gerekenler,
+
+1- Github kodu bilgisayarınıza indirilir ve proje açılır. (Zipten çıkarıp, intellij'de açabilirsiniz)
+2- Proje açılır ve intellij içerisindeki terminal'e tıklanır.
+3- Npm indirmek için brew install npm komudu çalıştırılır.
+4- npm install komudu çalıştırılır.
+5- Local'de sonuçları görmek için ng serve komudu çalıştırılır. (Compiled successfully görülür)
+6- Otomasyon projenizdeki report.json dosyanızı cucumber-report.json olarak güncelleyiniz. (Projedeki vermiş olduğunuz isimler farklı olabilir)
+7- İndirdiğiniz github kodundaki src/app içerisindeki cucumber-report.json'a kendi projenizdeki cucumber-report.json'u kopyalayın.
+8- Browser açılır ve http://localhost:4200/ sonuçlar görülür.
+
